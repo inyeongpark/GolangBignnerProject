@@ -5,8 +5,19 @@
 package main
 
 //특정 패키지에서 제공하는 기능을 사용하고 싶을때 호출(import)
+// fmt는 go의 기본언어 패키지
 import "fmt"
 
 func main() {
-	fmt.Println(("Hello World!"))
+	// 변수선언의 기본형태는 아래와같다
+	// var(변수선언키워드) hello_text(변수명) string(변수타입) = "Hello World!"(변수값)
+	var hello_text string = "Hello World!"
+	var b int
+
+	// 선언 대입문
+	hello_text2 := "Hello World2!!"
+
+	fmt.Println((hello_text))
+	fmt.Println(b)
+	fmt.Println(hello_text2)
 }
